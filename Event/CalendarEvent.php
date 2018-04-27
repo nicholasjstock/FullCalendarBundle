@@ -50,6 +50,16 @@ class CalendarEvent extends Event
     }
 
     /**
+   * @return CalendarEvent
+   */
+  public function setStart(\DateTime $start)
+  {
+      $this->start = $start;
+      return $this;
+  }
+
+
+    /**
      * @return \Datetime
      */
     public function getEnd()
